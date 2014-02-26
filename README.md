@@ -1,5 +1,5 @@
 ClickingWithJoystick
-====================
+*====================*
 
 int xPos = 0;
 int yPos = 0;
