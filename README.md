@@ -19,12 +19,17 @@ void setup()
 void loop()
 {
   delay(10);  
+
   xPos = analogRead(A0);
   yPos = analogRead(A1);
+
   Serial.println(xPos - xCal);
   Serial.println(yPos - yCal);
+
   Mouse.move((xPos-xCal)/10,(yPos-yCal)/10,0);
+
   Serial.println(digitalRead(5));
+
   if (digitalRead(5) == LOW)
   {
     Mouse.click();
